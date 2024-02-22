@@ -1,0 +1,61 @@
+
+  html {
+    font-family: sans-serif;
+}
+
+.large-box {
+    width: 200px;
+    height: 200px;
+    line-height: 200px; /* Center the text vertically */
+    text-align: center; /* Center the text horizontally */
+    font-size: 1.125rem; /* Approximately 18 pixels Used a REM to PX converter (assuming default browser font size is 16px) */
+    background-color: #3498db; /* Base color */
+    color: #ffffff; /* Contrasting color for text */
+    text-shadow: 1px 1px 1px #000000; /* Black text shadow */
+    border-radius: 8px; /* Fairly subtle border radius */
+    border: 1px solid #2c3e50; /* 1-pixel solid border with slightly darker shade */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* Standard box shadow for raised effect */
+    position: relative; /* Required for positioning the inset shadows */
+}
+
+.large-box:before,
+.large-box:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    height: 50%;
+    max-width: 100px; /* Half of box width */
+    max-height: 100px; /* Half of box height */
+    border-radius: 50%;
+}
+
+.large-box:before {
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white shadow */
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5); /* White inset box shadow */
+}
+
+.large-box:after {
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black shadow */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Black inset box shadow */
+}
+
+.large-box::before,
+.large-box::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%);
+    z-index: -1;
+    border-radius: 8px; /* Same border radius as the main box */
+}
+
+

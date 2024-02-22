@@ -1,0 +1,180 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    letter-spacing: .5px;
+    word-spacing: 2px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+    padding: 20px;
+    }
+nav a {
+    display: block;
+    color: #333; /* Text color */
+    text-decoration: none;
+    padding: 10px; /* Padding around the navigation links */
+    border: 2px solid #a66; /* Border style */
+    border-radius: 4px; /* Border radius to make the border corners rounded */
+    transition: border-color 0.3s ease; /* Smooth transition for border color change */
+    background-color: #f2f2f2; /* Background color */
+    text-align: center; /* Center align the text */
+    margin-bottom: 10px; /* Spacing between each navigation link */
+}
+
+/* Hover state for navigation links */
+nav a:hover {
+    border-color: #f90; /* Border color on hover */
+}
+ 
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* give the page a site-wide font size of 10px*/
+  html{
+    font-size: 10px;
+  }
+
+  /* Headings */
+h1 {
+    font-size: xx-large; /* Equivalent to 24px */
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.4rem; /* Equivalent to 14px */
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 1px; /*letter spacing for all headers */
+    font-size: x-large;
+}
+
+section p {
+    letter-spacing: 0.02em;
+    word-spacing: 0.1em;
+}
+
+section h2 + p:first-of-type{
+    text-indent: 20px;
+}
+
+section h3 + p {
+    text-indent: 20px;
+}
+
+a {
+    color: #a66; /* Default color */
+    text-decoration: underline; /*underline by default*/
+}
+
+/* Visited link */
+a:visited {
+    color: #d98; /* Color for visited links */
+
+}
+
+/* Hover state */
+a:hover {
+    color: #f90; /* Color on hover */
+    text-decoration: none;/* remove underline when hovering*/
+}
+
+/* Focus state */
+a:focus {
+    outline: none; /* Remove default focus outline */
+    color: #09f; /* Color when focused */
+    text-decoration: none; /* remove underline when focued*/
+}
+/* avtive state design*/
+a:active {
+    color: black; /* Change text color */
+    background-color: #a66; /* Change background color */
+    border-radius: 4px; /* Add border radius for rounded corners */
+    padding: 4px 8px; /* Add padding for better spacing */
+}
+
+/* External link icon */
+a.external::after {
+    content: "";
+    display: inline-block;
+    width: 16px; /* Adjust width of the icon */
+    height: 16px; /* Adjust height of the icon */
+    background-image: url("external-link-52.png");
+    background-size: contain; /* Ensure the icon fits within the specified dimensions */
+    background-repeat: no-repeat; /* Prevent the icon from repeating */
+    margin-left: 5px; /* Adjust spacing between link text and icon */
+}
+
+/* List items */
+li {
+    line-height: 1.4; /* Match line-height with paragraph */
+}
+
+/* Unordered list */
+ul {
+    margin-top: 20px; /* Adjust spacing at the top of the list */
+    margin-bottom: 20px; /* Adjust spacing at the bottom of the list */
+}
+
+/* Ordered list */
+ol {
+    margin-top: 20px; /* Adjust spacing at the top of the list */
+    margin-bottom: 20px; /* Adjust spacing at the bottom of the list */
+}
+
+/* List items with custom bullet */
+.custom-bullet li {
+    line-height: 1.4; /* Match line-height with paragraph */
+    list-style-type: square; /* Use square bullet */
+}
+
+/* Unordered list with custom bullet */
+.custom-bullet {
+    margin-top: 20px; /* Adjust spacing at the top of the list */
+    margin-bottom: 20px; /* Adjust spacing at the bottom of the list */
+}
+
+
+
+
+  /* WRITE YOUR CODE BELOW HERE */
